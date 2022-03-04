@@ -8,8 +8,16 @@ import (
 	"fmt"
 )
 
+func erroPer() {
+	err := errors.New("Error personalizado")
+
+	fmt.Println(err)
+}
+
 func main() {
 	err := errors.New("error message ")
 
 	fmt.Println(err)
+
+	erroPer()
 }
