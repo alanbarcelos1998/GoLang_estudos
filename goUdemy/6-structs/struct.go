@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type usuario struct {
 	nome     string
@@ -29,4 +31,7 @@ func main() {
 	}
 
 	fmt.Println(usuario2)
+
+	usuario3 := usuario{idade: 22}
+	fmt.Println(usuario3)
 }
